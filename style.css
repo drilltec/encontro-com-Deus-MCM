@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family= Righteous & display família= Justo &família= Sarala:wght@400;700 & swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: radial-gradient(circle, rgba(213, 46, 46, 0) 0%, rgb(153, 168, 157) 100%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.logo{
+    border-radius: 50%;
+    mix-blend-mode:luminosity;
+    
+    
+}
+
+
+
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.conteudo{
+    border-top: 0.5px solid rgb(215, 219, 240);
+    margin-bottom: 50px;
+    
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.div-img-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 33px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.assist{
+    font-size: 35px;
+}
+ 
+h2{
+    font-size: 35px;
+    color: rgb(27, 28, 37);
+    font-family: 'Righteous', cursiva;
+    position: relative;
+}
+
+h2::before{
+    content:attr(data-text) ;
+    position: absolute;
+    color: white;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right:   rgb(100, 205, 231);
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px rgb(8, 8, 8)) drop-shadow(0 0 50px);
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-comun{
+    
+    background: radial-gradient(circle, rgba(148,187,233,1)  0%,rgba(255, 255, 255, 0) 100%);
+    border: 5px  rgb(164, 224, 241);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.card-comun-assist{
+    background: radial-gradient(   rgb(96, 98, 100) 0%, rgba(63, 94, 86, 0)100%);
+    border: 5px transparent rgb(164, 224, 241);
+    border-radius: 15px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+.card-titulo{
+    font-size: 30px;
+    color: rgb(13, 25, 134);
+    font-family: 'Righteous', cursiva;
+    position: relative;
+}
+
+.card-subtitulo{
+    font-size: 19px;
+}
+
+.img-marcas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-marcas-img{
+    width: 550.13px;
+    height: 150.31px;
+}
+
+.conteudo-img{
+    padding: 25px;
+    width: 300.13px;
+    height: 400.31px;
+    mix-blend-mode: multiply;
+    
+}
+
+.segunda-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    font-size: 24px;
+    padding: 10px;
+}
+
+footer{
+    border-top: 0.5px solid rgb(215, 219, 240);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.bandeiras{
+    width: 300px;
+height: 50px;
+mix-blend-mode: multiply;
+
+}
+
+.navbar-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media( max-width:785px){
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 22px;
+    }
+
+    p{
+        font-size: 21px;
+        text-align:center;
+    }
+
+    .assist{
+        font-size: 25px;
+        color: rgb(13, 15, 13);
+        border-color: black;
+        
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .card-comun{ 
+        width: 180px;
+        height: 180px;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+    .card-titulo{
+        font-size: 20px;
+        color: rgb(13, 25, 134);
+        font-family: 'Righteous', cursiva;
+        position: relative;
+    }
+    
+    .card-subtitulo{
+        font-size: 14px;
+    }
+
+    .card-comun-assist{
+        
+        width: 90%;
+        height: 300px;
+        padding: 20px;
+     
+    }
+    
+    
+
+    .conteudo-img{
+        align-items: center;
+       
+        width: 350.13px;
+        height: 350.31px;
+        mix-blend-mode: multiply;
+        
+    }
+
+    .img-marcas-img{
+        width: 250.13px;
+        height: 50.31px;
+    }
+
+    .segunda-sec{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer{
+        border-top: 0.5px solid rgb(215, 219, 240);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+   
+    
+    .bandeiras{
+    width: 150px;
+    height: 25px;
+    mix-blend-mode: multiply;
+
+    }
+
+    .text-bandeiras{
+    font-size: 13px;
+    }
+
+
+}
+
+.whats{
+    text-align: center;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 9999;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+
+
+
+a {
+    color: inherit;
+}
+
+@keyframes pulsar {
+    0% {
+        height: 65px;
+        width: 65px;
+    }
+    100% {
+        height: 85px;
+        width: 85px;
+    }
+}
